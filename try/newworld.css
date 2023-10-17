@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100;0,300;1,700;1,900&family=Rubik:wght@800&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+
+}
+
+
+:root{
+   
+    --txtc-: rgb(255, 255, 255);
+   
+    --nav-c-:crimson;
+   
+    --shadow-:rgba(0, 0, 0, 0.325);
+}
+/* nav bar */
+
+.nav0{
+    position: fixed;
+    
+   
+     box-sizing: border-box;
+ }
+ .nav0 ul li{
+  position: relative;
+     text-align: center;
+     justify-content: center;
+     display: inline-block;
+     padding: 5px;
+     height:  70px;
+     top: 20px;
+     font-size: 1.4rem;
+     left: 750px;
+     gap:1.5rem;
+     top: 30px;
+   
+ }
+ .nav0 ul li a{
+   
+    transition: 0.4s ease;
+     
+      color: var(--txtc-);
+ }
+ .nav0 ul li a:hover{
+     transition: 0.4s ease;
+     text-transform: uppercase;
+     background: var(--nav-c-);
+     box-sizing: border-box;
+     color: white;
+     border-radius: 30px;
+     
+     
+ }
+ .nav0 ul li a:active{
+    background: rgba(16, 16, 155, 0.474);
+ }
+ 
+ 
+ 
+ .sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   left:0px;
+   background: rgba(0, 0, 0, 0.705);
+   z-index: 11000000000;
+ }
+ 
+   
+
+
+/* nav-close */
+/* logo*/
+#dumb{
+    position: absolute;
+    top:-30px;
+    font-size: 14rem;
+    color: crimson;
+}
+/* logo-close */
+/* body1*/
+.body1{
+    background: linear-gradient(black, rgba(2, 5, 25, 0.862)),url(images2/01-Bergman-Interiors_Accor-Gym-Day-View-01-Hires.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index:1;
+
+    height:100vh;
+    width:100%;
+}
+/* body1-close*/
+/* intro*/
+.intro{
+    position: absolute;
+    left: 120px;
+    font-size: 6rem;
+    top:250px;
+    z-index:1;
+
+}
+.intro h1{
+    color: crimson;
+    z-index:1;
+}
+.intro-p{
+    position: absolute;
+    color: crimson;
+    top:450px;
+    left: 250px;
+    font-size: 2rem;
+    z-index:1;
+}
+/* intro-close * /
+/* body2 */
+/* intro*/
+.body2{
+    position: absolute;
+    top:1000px;
+    left: 900px;
+    text-align: center;
+    z-index:17;
+}
+.abt-img{
+    position: absolute;
+    z-index:13;
+    
+
+
+
+}
+.abttxt2{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+
+    top:120px;
+}
+.abt-img img{
+    position: absolute;
+    height: 570px;
+    top: 100px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px;
+    z-index:12;
+    left:-800px
+}
+.box{
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px;
+    width:800px;
+    border-radius: 20px;
+    height:568px;
+    top:148px;
+    left: 70px;
+    z-index:1;
+}
+
+/* intro2-close*/
+/* body2-close*/
+
+/*body3/
+/intro3*/
+
+.body3{
+    position: absolute;
+    top:-830px;
+}
+
+.link{
+    position: absolute;
+    top:2500px;
+    left:120px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: crimson;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1500;
+}
+.link a{
+    color:white;
+    transition: 0.4s ease;
+}
+.link a:hover{
+    transition: 0.4s ease;
+    color: rgb(255, 255, 255);
+    background:black;
+}
+.link a:active{
+    color:white;
+    background: darkblue;
+}
+@keyframes link {
+    0%{
+        transform: rotate(0deg);
+    }
+    5%{
+        transform: rotate(10deg);
+    }
+}
+.link{
+    animation:link 0.5s infinite;
+}
+.cartimg{
+    position: absolute;
+    left: -500px;
+    z-index: 1000;
+    top:160px;
+}
+
+.body3 .intro3{
+    position: absolute;
+    
+  
+    
+}
+.body3 .intro3 h1{
+    position: absolute;
+    top:2090px;
+    left: 550px;
+}
+.body3 .box2{
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px;
+   
+    top: 2200px;
+    width: 420%;
+    height: 40vh;
+    left: 545px;
+
+}
+.body3 .productscon{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap:4rem;
+    margin-top: 2rem;
+    justify-content: center;
+    box-sizing:border-box;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px gray;
+    
+    position: relative;
+}
+.body3 .productscon img{
+    position: relative;
+    box-sizing: border-box;
+   background: rgb(242, 239, 239);
+   box-shadow: 0px 2px 2px;
+    
+    height: 220px;
+   
+    
+    left: -48px;
+    width: 144%;
+    object-fit: contain;
+    
+}
+.productscon img{
+    transition: 0.4s ease;
+}
+.productscon img:hover{
+    transition: 0.4s ease;
+    background: rgb(210, 206, 206);
+}
+
+/* prices*/
+.pricecon{
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width:30.6%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px;
+}
+.cart0{
+    position: absolute;
+    font-size: 3.5rem;
+    left:15px;
+    transition: 0.4s ease;
+    cursor: grab;
+}
+.cart0:hover{
+    color: red;
+    font-size: 5rem;
+}
+.cart0:active{
+    color: red;
+}
+.pricecon1{
+    position: absolute;
+    top: 220px;
+    left: 305px;
+    width:30.6%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px;
+}
+
+.cart1{
+    position: absolute;
+    font-size: 3.5rem;
+    left:300px;
+    transition: 0.4s ease;
+    cursor: grab;
+}
+.cart1:hover{
+    transition: 0.4s ease;
+    color: red;
+    font-size: 5rem;
+}
+.cart1:active{
+    color:red;
+}
+.pricecon2{
+    position: absolute;
+    top: 220px;
+    left: 590px;
+    width:34%;
+    
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px;
+}
+.cart2{
+    position: absolute;
+    font-size: 3.5rem;
+    left:585px;
+    transition: 0.4s ease;
+    cursor: grab;
+}
+.cart2:hover{
+    transition: 0.4s ease;
+    color: red;
+    font-size: 5rem;
+}
+.cart2:active{
+    color:red;
+}
+/* price-end*/
+#img2{
+    position: absolute;
+    top: 2000px;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1 ease;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1 ease-out;
+    }
+}
+#img2 {
+    animation:flicker 0.5s infinite;
+
+}
+/* body3close*/
+/*body4*/
+.body4con{
+    position: absolute;
+    top:1960px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px;
+    width:100%;
+    height:100vh;
+    background: linear-gradient(rgba(38, 38, 54, 0.605), rgba(65, 44, 124, 0.434)),url(images2/The-Three-Different-Body-Types-and-How-They-Affect-Your-Training.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+
+}
+.types{
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px gray;
+    width:100%;
+    background: rgba(0, 0, 0, 0.69);
+
+}
+.types ul li{
+    display: inline-block;
+    padding: 5px;
+    height: 7vh;
+}
+.types ul li a{
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+.types ul li a:hover{
+    transition: 0.4s ease;
+    background: rgba(122, 122, 227, 0.797);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 20px
+}
+
+/*body4close*/
+
+/*/ responsiveness*/
+
+
+   
+
+    
+
+/*/ responsiveness close*/

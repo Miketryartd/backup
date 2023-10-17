@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda is an e-commerce web based application that focuses on giving user a fun, easy, and smooth e-shopping experience."
+    />
+    <title>Tienda</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/akar-icons-fonts/src/css/akar-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="utils.js" defer></script>
+    <script src="landing.js" defer></script>
+  </head>
+  <body>
+    <div style="position: relative">
+      <header class="header">
+        <div class="nav">
+          <a href="#" class="nav-logo">
+            <img src="img/logo.png" style="width: 35px; height: 35px; object-fit: cover" />
+            <span class="desktop-only">Tienda</span>
+          </a>
+
+          <nav class="desktop-only-navs">
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#newsletter">Newsletter</a>
+          </nav>
+
+          <div class="nav-buttons">
+            <a class="login" href="/login.html"> Log in </a>
+            <a class="register" href="/register.html"> Sign up </a>
+          </div>
+
+          <details class="nav-burger">
+            <summary>
+              <i class="ai-three-line-horizontal"></i>
+              <span>Menu</span>
+            </summary>
+
+            <div class="nav-buttons mobile-only">
+              <a href="#products"> Products </a>
+              <a href="#about"> About </a>
+              <a href="#contact"> Contact </a>
+              <a href="#newsletter"> Newsletter </a>
+              <a class="login" href="/login.html"> Login </a>
+              <a class="register" href="/register.html"> Sign up </a>
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <main class="hero-container">
+        <div>
+          <h1 class="hero-heading">
+            Buy things you like, <br />
+            without too much hassle
+          </h1>
+          <h2 class="hero-subheading">Tienda provides you a hassle, and worry free e-shopping experience with its friendly UI.</h2>
+
+          <div>
+            <a class="hero-cta-button" href="/register.html">
+              <i class="ai-shopping-bag sb"></i>
+              <span>Shop now</span>
+              <div>
+                <i class="ai-chevron-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- <div>
+          <img src="img/hero-img.png" alt="" class="hero-img" />
+        </div> -->
+      </main>
+
+      <div id="products" class="products-section">
+        <div class="product-logo">
+          <i class="ai-headphone"></i>
+        </div>
+        <h1>Check out some of our products</h1>
+        <div class="products-wrapper">
+          <div class="products-container"></div>
+        </div>
+      </div>
+
+      <div id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-logo">
+            <i class="ai-shopping-bag"></i>
+          </div>
+          <h1>About</h1>
+          <p>Tienda is an e-commerce web based application that focuses on giving user a fun, easy, and smooth e-shopping experience.</p>
+        </div>
+      </div>
+
+      <div id="contact" class="contact-section">
+        <div class="contact-logo">
+          <i class="ai-phone"></i>
+        </div>
+        <h1>Contact</h1>
+        <p>
+          Tienda's office is located at <b>Palawan, Philippines</b>. If you got any concerns, you can always contact our customer service
+          with this number <b>0123-456-7890</b> or send us an email on <b>tienda@support.com</b>.
+        </p>
+      </div>
+
+      <div id="newsletter" class="newsletter-section">
+        <div class="newsletter-logo">
+          <i class="ai-newspaper"></i>
+        </div>
+        <h1>Newsletter</h1>
+        <p>Be updated with our product and get notified whenever there's a new arrival via email</p>
+        <form>
+          <input type="email" placeholder="Email Address" />
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright">
+          <div class="footer-logo">
+            <i class="ai-shopping-bag"></i>
+          </div>
+
+          <div class="copyright-text">
+            <p>Copyright &copy; 2022 Tienda</p>
+            <span>All Rights Reserved</span>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column categories-footer">
+            <p class="head-text">Categories</p>
+            <ul>
+              <li>Smartphones</li>
+              <li>Laptops</li>
+              <li>Gragrances</li>
+              <li>Skincare</li>
+              <li>Groceries</li>
+              <li>Home Decoration</li>
+              <li>Furniture</li>
+              <li>Tops</li>
+              <li>Womens Dresses</li>
+              <li>Womens Shoes</li>
+              <li>Mens Shirts</li>
+              <li>Mens Shoes</li>
+              <li>Mens Watches</li>
+              <li>Womens Watches</li>
+              <li>Womens Bags</li>
+              <li>Womens Jewellery</li>
+              <li>Sunglasses</li>
+              <li>Automotive</li>
+              <li>Motorcycle</li>
+              <li>Lighting</li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Support</p>
+
+            <ul>
+              <li>
+                <a href="#">Feedback</a>
+              </li>
+              <li>
+                <a href="#">Need Help?</a>
+              </li>
+              <li>
+                <a href="#"> Bug Report </a>
+              </li>
+              <li>
+                <a href="#">Issue problem</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Sections</p>
+            <ul>
+              <li>
+                <a href="#products">Products</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#newsletter">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Socials</p>
+
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Privacy</p>
+
+            <ul>
+              <li>Our Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+
+          <div>
+            <a href="/register.html" class="footer-btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Redirect to home page if user is logged in -->
+    <script>
+      if (localStorage.getItem("loggedUser")) {
+        window.location.href = "/home.html";
+      }
+    </script>
+  </body>
+</html>

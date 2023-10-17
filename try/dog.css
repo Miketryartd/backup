@@ -1,0 +1,464 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+    box-sizing:border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration:none;
+    overflow-x: hidden;
+    
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100;0,300;1,700;1,900&display=swap');
+
+:root{
+    --bg-color-:linear-gradient(to right, rgba(161, 99, 40, 0.409), rgba(69, 69, 20, 0.766));
+    --text-color-:rgb(17, 15, 15);
+    --nav-color-:rgba(185, 172, 203, 0.932);
+    --sec-text-:white;
+    --dark-color-:linear-gradient(to right, rgba(25, 1, 40, 0.828), rgb(12, 2, 21));
+    --shadow-:black;
+    --sticky-:rgba(217, 217, 228, 0.772);
+    
+}
+body{
+    background: var(--bg-color-);
+    color: var(--text-color-);
+    transition: 0.8s ease;
+}
+
+.dark-mode{
+    transition: 0.8ss ease;
+  background-color: rgb(38, 32, 32);
+  color: var(--sec-text-);
+  --text-color-: white;
+  --nav-color-:rgba(102, 81, 171, 0.511);
+  --shadow-:black;
+  --bg-color-: rgba(0, 0, 0, 0.112);
+  --sticky-: rgb(17, 7, 32); 
+  
+
+}
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    box-shadow: 2px -12px 24px var(--shadow-);
+    width:100%;
+    transition: 0.6s;
+    padding: 2px 100px;
+    z-index: 1000000;
+    
+
+}
+
+
+header.sticky {
+    padding:5px 100px;
+    background: var(--sticky-);
+    
+}
+
+header.sticky ul li a{
+    color: var(--text-color-);
+    
+}
+#navbar{
+    display: inline-block;
+    font-weight: 800;
+
+    
+
+}
+header ul li a {
+    position: relative;
+    margin: 0 2px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight:500px;
+    transition:0.6s;
+   
+}
+ul li{
+    position: relative;
+    display: inline-block;
+    left: 730px;
+    transition: 0.4s ease;
+}
+ul li:hover{
+    transition: 0.4s ease;
+    background: var(--nav-color-);
+    text-transform:uppercase;
+    box-sizing: border-box;
+    border-radius: 23px;
+}
+
+.links{
+    color: var(--text-color-);
+    
+}
+.logo{
+    position: relative;
+    background: border-box;
+    width: 2%;
+    top:32px;
+    border: solid;
+}
+#dog-logo{
+    position:relative;
+   font-size:2rem;
+   color:var(--text-color-);
+}
+.dog-img{
+   position: absolute;
+   margin: 280px;
+   left:400px;
+   padding: 50px;
+   height: 800px;
+   
+}
+
+button{
+    position:relative;
+    padding:0px;
+    height:-5px;
+    box-sizing:border-box;
+    border-radius: 20px;
+    left: 710px;
+    display: flex;
+}
+.txh1{
+    position:absolute;
+    margin: 50px;
+    padding:320px;
+    text-transform:uppercase;
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+#demo{
+    background: rgba(39, 21, 92, 0.713);
+    
+    transition: 0.4s ease;
+}
+#demo:hover{
+    transition: 0.4s ease;
+    background: white;
+}
+.home{
+    box-sizing:border-box;
+    box-shadow:730px -87px 99px;
+    height:100vh;
+    width:100%;
+}
+.bla{
+    position:absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    left:  1px;
+   background: var(--bg-color-);
+    width: 100%;
+    box-shadow: 0px 1px 4px var(--shadow-);
+}
+.snacks{
+    position: absolute;
+    padding:200px;
+    font-size:5rem;
+}
+
+#shop-icon{
+    position:absolute;
+    font-size:22rem;
+    bottom:200px;
+}
+
+.dog2-img{
+    position: absolute;
+    margin: 280px;
+    left: 900px;
+    padding: 60px;
+    height: 720px;
+    top:-20px;
+}
+
+
+
+
+
+
+
+#food-menu{
+    height:20px;
+}
+.products{
+    position:absolute;
+    margin:10px 50px;
+
+    background-color:rgba(255, 255, 255, 0.262);
+    box-sizing:border-box;
+    border-radius:20px;
+    box-shadow:0px 0px 4px;
+    padding:10px;
+    margin:520px;
+    cursor: pointer;
+}
+.products img{
+    width: 230px;
+    padding:5px;
+}
+
+.food-bg{
+    position:absolute;
+    left: 1222px;
+    padding:50px;
+    
+}
+.foodie-bg{
+    position:absolute;
+}
+
+
+
+.h2o{
+    position: absolute;
+    padding:400px, 50px;
+    bottom: -480px;
+    left:800px;
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.262);
+    box-shadow: 2px 1px 4px var(--shadow-);
+    border-radius:20px;
+    
+    
+    
+}
+
+.sbar{
+    position: absolute;
+    padding:2px;
+    top:3200px;
+    left:350px;
+    margin:45px;
+    height: 40px;
+    width:850px;
+    box-sizing:border-box;
+    border-radius: 140px;
+    
+}
+.search-icon{
+    position:absolute;
+    font-size:2rem;
+    top:3200px;
+    left:1220px;
+    margin:44px;
+}
+.top{
+    background:border-box;
+    box-shadow:2px 1px 44px var(--shadow-);
+}
+.box{
+    box-sizing:border-box;
+    box-shadow:2px 14px 4px var(--shadow-); 
+    border-radius:20px;
+}
+    
+#bowl{
+    position: absolute;
+    padding:50px;
+    left:770px;
+    margin:211px;
+    z-index:10000;
+    height:555px;
+}
+.Shop{
+    position:absolute;
+    left:310px;
+    color: var(--sec-text-);
+    background-color: rgba(216, 164, 21, 0.828);
+    box-sizing:border-box;
+    border-radius:20px;
+    
+    
+    font-size:1.4rem;
+    transition:0.4s ease;
+    
+}
+.Shop:hover{
+    transition:0.4s ease;
+    background: orange;
+    text-transform: uppercase;
+
+}
+
+.About-section{
+    position:absolute;
+    bottom: -1700px;
+    box-sizing:border-box;
+    box-shadow: 2px 1px 44px;
+    left:200px;
+    height:500px;
+    width: 72%;
+    border-radius: 850px;
+    
+
+}
+.hab{
+    position:absolute;
+    left:615px;
+}
+
+.mike{
+    position:absolute;
+    height:400px;
+    left:50px;
+    box-sizing:border-box;
+    border-radius:200px;
+    
+}
+.Par{
+    position:relative;
+    left:500px;
+    top:100px;
+}
+.dog-paw{
+    position: absolute;
+    left:700px;
+    top:310px;
+}
+
+.dog-shops{
+    position:absolute;
+    box-sizing:border-box;
+    border-radius:0;
+    box-shadow:2px 3px 7px var(--shadow-);
+    width:100%;
+    height:120px;
+    top:3200px;
+    color: var(--text-color-);
+    
+}
+
+.dog-shops div ul li a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-);
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-weight: 900;
+    
+}
+.pitbull{
+    position: absolute;
+    padding:1200px;
+    margin:300px;
+    left:-1600px;
+    top:1200px;
+}
+
+
+
+
+.ww{
+    position:relative;
+    font-size:2rem;
+    padding: 40px, 24px;
+    justify-content: center;
+    display: flex;
+    gap:1.5rem;
+    color: var(--text-color-);
+}
+
+.btncart{
+    position:absolute;
+    top:3200px;
+    left:50px;
+    padding: 40px;
+    box-sizing:border-box;
+    border-radius:200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.shop-content{
+    position: absolute;
+    left:40px;
+    top:3400px;
+    box-sizing:border;
+    box-shadow: 2px 14px 22px;
+    width:250px;
+    height:320px;
+    text-align: center;
+    display:none;
+
+    
+}
+
+.div-contents{
+    position: absolute;
+    top:3400px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2px;
+    background-color: #2196F3;
+    padding: 2px;
+    box-sizing:border-box;
+    background: var(--sec-text-);
+    box-shadow:0px 4px 12px var(--shadow-);
+    border-radius:50px;
+    z-index:10000000000000000;
+    display: none;
+    
+    
+    
+}
+.div-contents img{
+    background-color: rgba(207, 201, 201, 0.425);
+    text-align: center;
+    padding: 2px 0;
+    font-size: 30px;
+  }
+.div-contents .p-text{
+    position:absolute;
+    top:470px;
+    left:20px;
+    color: var(--text-color-);
+}
+.beak{
+    position:absolute;
+    top:470px;
+    left:180px;
+    font-size:1.4rem;
+    cursor:pointer;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

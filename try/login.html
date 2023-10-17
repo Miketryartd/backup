@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in on Tienda" />
+    <title>Tienda | Login</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/akar-icons-fonts/src/css/akar-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <a href="index.html" class="nav-logo">
+          <img src="img/logo.png" style="width: 35px; height: 35px; object-fit: cover" />
+          <span class="desktop-only">Tienda</span>
+        </a>
+
+        <a href="register.html" class="nav-button">Sign up</a>
+      </div>
+      <div class="auth-container">
+        <h1>Sign in</h1>
+        <h2>Log in to your account</h2>
+        <form onsubmit="login(event)" class="form-container">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" name="login-username" id="username" />
+            <p class="error-msg username">Username does not exist</p>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="login-password" id="password" />
+            <p class="error-msg password">Incorrect password</p>
+          </div>
+          <button class="form-button" type="submit">Continue</button>
+          <a href="/register.html" class="form-button no-bg">Create new account</a>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright">
+          <div class="footer-logo">
+            <i class="ai-shopping-bag"></i>
+          </div>
+
+          <div class="copyright-text">
+            <p>Copyright &copy; 2022 Tienda</p>
+            <span>All Rights Reserved</span>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column categories-footer">
+            <p class="head-text">Categories</p>
+            <ul>
+              <li>Smartphones</li>
+              <li>Laptops</li>
+              <li>Gragrances</li>
+              <li>Skincare</li>
+              <li>Groceries</li>
+              <li>Home Decoration</li>
+              <li>Furniture</li>
+              <li>Tops</li>
+              <li>Womens Dresses</li>
+              <li>Womens Shoes</li>
+              <li>Mens Shirts</li>
+              <li>Mens Shoes</li>
+              <li>Mens Watches</li>
+              <li>Womens Watches</li>
+              <li>Womens Bags</li>
+              <li>Womens Jewellery</li>
+              <li>Sunglasses</li>
+              <li>Automotive</li>
+              <li>Motorcycle</li>
+              <li>Lighting</li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Support</p>
+
+            <ul>
+              <li>
+                <a href="#">Feedback</a>
+              </li>
+              <li>
+                <a href="#">Need Help?</a>
+              </li>
+              <li>
+                <a href="#"> Bug Report </a>
+              </li>
+              <li>
+                <a href="#">Issue problem</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Sections</p>
+            <ul>
+              <li>
+                <a href="#products">Products</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#newsletter">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Socials</p>
+
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+
+          <div class="column categories-footer">
+            <p class="head-text">Privacy</p>
+
+            <ul>
+              <li>Our Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+
+          <div>
+            <a href="/register.html" class="footer-btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/argon2-browser/1.18.0/argon2-bundled.min.js"
+      integrity="sha512-Alrh8vbmKDc5xiq7I/y8LTDwy9nw1nT9S/yR73HMMoWrpX4S1kizNPdWM896c/CDIGILNwAiaih627A94kRhYQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Redirect to home page if user is logged in -->
+    <script>
+      if (localStorage.getItem("loggedUser")) {
+        window.location.href = "/home.html";
+      }
+    </script>
+  </body>
+</html>
